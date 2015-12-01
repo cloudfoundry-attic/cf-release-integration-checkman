@@ -1,0 +1,4 @@
+#- cf-release
+create-final-release: concourse.check https://mega.ci.cf-app.com cf-release create-final-release
+merge-master-into-develop: concourse.check https://mega.ci.cf-app.com cf-release merge-master-into-develop
+

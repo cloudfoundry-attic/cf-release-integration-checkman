@@ -1,0 +1,2 @@
+#- canibump
+canibump: curl -f -s https://canibump.cfapps.io | grep -q YES <(grep -A1 'id="can_i_bump"') && echo '{"result":true,"changing":false,"info":[],"url":"https://canibump.cfapps.io"}' || echo '{"result":false,"changing":false,"info":[],"url":"https://canibump.cfapps.io"}'

@@ -1,0 +1,6 @@
+#- alfredo
+cf-deployment-unit-tests: concourse.check https://mega.ci.cf-app.com alfredo cf-deployment-unit-tests
+deploy-and-test-alfredo: concourse.check https://mega.ci.cf-app.com alfredo deploy-and-test-alfredo
+bless: concourse.check https://mega.ci.cf-app.com alfredo bless
+merge-master-into-develop: concourse.check https://mega.ci.cf-app.com alfredo merge-master-into-develop
+

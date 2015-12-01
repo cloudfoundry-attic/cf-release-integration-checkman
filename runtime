@@ -1,0 +1,30 @@
+#- cf-release
+cf-release-unit-tests: concourse.check https://runtime.ci.cf-app.com cf-release cf-release-unit-tests
+cc-unit-tests: concourse.check https://runtime.ci.cf-app.com cf-release cc-unit-tests
+create-release: concourse.check https://runtime.ci.cf-app.com cf-release create-release
+deploy-and-test-tabasco: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-tabasco
+deploy-and-test-diego-tabasco: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-diego-tabasco
+deploy-v1-dummy-broker: concourse.check https://runtime.ci.cf-app.com cf-release deploy-v1-dummy-broker
+deploy-and-test-openstack: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-openstack
+deploy-and-test-vsphere: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-vsphere
+deploy-and-test-bosh-lite: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-bosh-lite
+deploy-and-test-minimal: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-minimal
+deploy-and-test-a1: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-a1
+rc: concourse.check https://runtime.ci.cf-app.com cf-release rc
+
+#- bosh
+clean-all-the-boshes: concourse.check https://runtime.ci.cf-app.com cf-release clean-all-the-boshes
+
+#- pipeline-image
+build-pipeline-image: concourse.check https://runtime.ci.cf-app.com cf-release build-pipeline-image
+
+#- smokes
+tabasco-runtime-smokes: concourse.check https://runtime.ci.cf-app.com cf-release tabasco-runtime-smokes
+tabasco-loggregator-smokes: concourse.check https://runtime.ci.cf-app.com cf-release tabasco-loggregator-smokes
+a1-runtime-smokes: concourse.check https://runtime.ci.cf-app.com cf-release a1-runtime-smokes
+a1-loggregator-smokes: concourse.check https://runtime.ci.cf-app.com cf-release a1-loggregator-smokes
+
+#- canaries
+push-a1-canaries: concourse.check https://runtime.ci.cf-app.com cf-release push-a1-canaries
+push-tabasco-canaries: concourse.check https://runtime.ci.cf-app.com cf-release push-tabasco-canaries
+

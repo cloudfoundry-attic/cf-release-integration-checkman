@@ -1,0 +1,7 @@
+#- libraries
+cf-uaa-lib: travis.check cloudfoundry cf-uaa-lib
+cf-deployer: travis.check pivotal-cf-experimental cf-deployer
+membrane: travis.check cloudfoundry membrane
+spiff: travis.check cloudfoundry-incubator spiff
+vcap-common: travis.check cloudfoundry vcap-common
+yagnats: travis.check cloudfoundry yagnats
