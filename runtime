@@ -1,10 +1,7 @@
 #- cf-release
 cf-release-unit-tests: concourse.check https://runtime.ci.cf-app.com cf-release cf-release-unit-tests
-cc-unit-tests: concourse.check https://runtime.ci.cf-app.com cf-release cc-unit-tests
 create-release: concourse.check https://runtime.ci.cf-app.com cf-release create-release
 deploy-and-test-tabasco: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-tabasco
-deploy-and-test-diego-tabasco: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-diego-tabasco
-deploy-v1-dummy-broker: concourse.check https://runtime.ci.cf-app.com cf-release deploy-v1-dummy-broker
 deploy-and-test-openstack: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-openstack
 deploy-and-test-vsphere: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-vsphere
 deploy-and-test-bosh-lite: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-bosh-lite
