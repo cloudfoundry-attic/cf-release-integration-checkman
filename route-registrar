@@ -1,2 +1,3 @@
 #- route-registrar
-route-registrar: concourse.check https://mega.ci.cf-app.com route-registrar test-route-registrar
+test-route-registrar: concourse.check https://mega.ci.cf-app.com route-registrar test-route-registrar
+

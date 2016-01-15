@@ -1,0 +1,3 @@
+#- mkman
+test-mkman: concourse.check https://mega.ci.cf-app.com mkman test-mkman
+
