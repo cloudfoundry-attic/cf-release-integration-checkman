@@ -1,7 +1,5 @@
 #- mkman
 test-mkman: concourse.check https://mega.ci.cf-app.com mkman test-mkman
 shipit: concourse.check https://mega.ci.cf-app.com mkman shipit
-major: concourse.check https://mega.ci.cf-app.com mkman major
-minor: concourse.check https://mega.ci.cf-app.com mkman minor
 patch: concourse.check https://mega.ci.cf-app.com mkman patch
 
