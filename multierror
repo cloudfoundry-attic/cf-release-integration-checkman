@@ -1,0 +1,3 @@
+#- multierror
+test-multierror: concourse.check https://mega.ci.cf-app.com multierror test-multierror
+
