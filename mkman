@@ -1,5 +1,3 @@
 #- mkman
 test-mkman: concourse.check https://runtime.ci.cf-app.com mkman test-mkman
-shipit: concourse.check https://runtime.ci.cf-app.com mkman shipit
-patch: concourse.check https://runtime.ci.cf-app.com mkman patch
 
