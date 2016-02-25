@@ -1,0 +1,3 @@
+#- canaries
+push-canaries: concourse.check https://runtime.ci.cf-app.com canaries push-canaries
+
