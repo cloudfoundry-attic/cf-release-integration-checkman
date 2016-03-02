@@ -1,4 +1,6 @@
 #- cf-release
 create-final-release: concourse.check https://runtime.ci.cf-app.com cf-release-final create-final-release
 merge-master-into-develop: concourse.check https://runtime.ci.cf-app.com cf-release-final merge-master-into-develop
+announce-rc: concourse.check https://runtime.ci.cf-app.com cf-release-final announce-rc
+create-release-notes: concourse.check https://runtime.ci.cf-app.com cf-release-final create-release-notes
 
