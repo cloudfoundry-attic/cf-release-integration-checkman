@@ -1,0 +1,4 @@
+#- runtime-dev-envs
+runtime1: concourse.check https://runtime.ci.cf-app.com runtime-dev-envs green-means-nothing-deployed-on-runtime1
+runtime2: concourse.check https://runtime.ci.cf-app.com runtime-dev-envs green-means-nothing-deployed-on-runtime2
+
