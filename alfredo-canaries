@@ -1,3 +1,3 @@
 #- canaries
-push-canaries: concourse.check https://runtime.ci.cf-app.com canaries push-canaries
+push-canaries: concourse.check https://runtime.ci.cf-app.com alfredo-canaries push-canaries
 
