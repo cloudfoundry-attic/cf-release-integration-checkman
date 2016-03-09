@@ -4,9 +4,11 @@ create-release: concourse.check https://runtime.ci.cf-app.com cf-release create-
 deploy-and-test-tabasco: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-tabasco
 deploy-and-test-openstack: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-openstack
 deploy-and-test-vsphere: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-vsphere
+create-bosh-lite-subnet: concourse.check https://runtime.ci.cf-app.com cf-release create-bosh-lite-subnet
 deploy-and-test-bosh-lite: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-bosh-lite
 deploy-and-test-minimal: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-minimal
 deploy-and-test-a1: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-a1
+a1-diego-deploy-and-test: concourse.check https://runtime.ci.cf-app.com cf-release a1-diego-deploy-and-test
 rc: concourse.check https://runtime.ci.cf-app.com cf-release rc
 
 #- bosh
