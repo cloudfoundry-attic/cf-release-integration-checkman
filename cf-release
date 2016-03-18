@@ -6,8 +6,11 @@ deploy-and-test-openstack: concourse.check https://runtime.ci.cf-app.com cf-rele
 deploy-and-test-vsphere: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-vsphere
 deploy-and-test-bosh-lite: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-bosh-lite
 deploy-and-test-minimal: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-minimal
-deploy-and-test-a1: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-a1
-a1-diego-deploy-and-test: concourse.check https://runtime.ci.cf-app.com cf-release a1-diego-deploy-and-test
+a1-cf-deploy: concourse.check https://runtime.ci.cf-app.com cf-release a1-cf-deploy
+a1-cf-cats: concourse.check https://runtime.ci.cf-app.com cf-release a1-cf-cats
+a1-smoke-tests: concourse.check https://runtime.ci.cf-app.com cf-release a1-smoke-tests
+a1-diego-deploy: concourse.check https://runtime.ci.cf-app.com cf-release a1-diego-deploy
+a1-diego-cats: concourse.check https://runtime.ci.cf-app.com cf-release a1-diego-cats
 rc: concourse.check https://runtime.ci.cf-app.com cf-release rc
 
 #- bosh
@@ -25,4 +28,8 @@ a1-loggregator-smokes: concourse.check https://runtime.ci.cf-app.com cf-release 
 #- canaries
 push-a1-canaries: concourse.check https://runtime.ci.cf-app.com cf-release push-a1-canaries
 push-tabasco-canaries: concourse.check https://runtime.ci.cf-app.com cf-release push-tabasco-canaries
+
+#- rubbish-bin
+deploy-and-test-a1: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-a1
+a1-diego-deploy-and-test: concourse.check https://runtime.ci.cf-app.com cf-release a1-diego-deploy-and-test
 
