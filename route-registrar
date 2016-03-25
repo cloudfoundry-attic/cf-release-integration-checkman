@@ -1,3 +1,0 @@
-#- route-registrar
-test-route-registrar: concourse.check https://runtime.ci.cf-app.com route-registrar test-route-registrar
-
