@@ -32,8 +32,3 @@ push-a1-canaries: concourse.check https://runtime.ci.cf-app.com cf-release push-
 push-a1-diego-canaries: concourse.check https://runtime.ci.cf-app.com cf-release push-a1-diego-canaries
 push-tabasco-canaries: concourse.check https://runtime.ci.cf-app.com cf-release push-tabasco-canaries
 
-#- rubbish-bin
-deploy-and-test-a1: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-a1
-a1-diego-deploy-and-test: concourse.check https://runtime.ci.cf-app.com cf-release a1-diego-deploy-and-test
-deploy-and-test-vsphere: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-vsphere
-
