@@ -1,5 +1,6 @@
 #- cf-release
 cf-release-unit-tests: concourse.check https://runtime.ci.cf-app.com cf-release cf-release-unit-tests
+cf-release-branch-freshness: concourse.check https://runtime.ci.cf-app.com cf-release cf-release-branch-freshness
 create-release: concourse.check https://runtime.ci.cf-app.com cf-release create-release
 deploy-and-test-tabasco: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-tabasco
 deploy-and-test-openstack: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-openstack
