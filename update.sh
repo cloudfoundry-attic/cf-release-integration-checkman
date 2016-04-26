@@ -18,7 +18,7 @@ function remove_rubbish_bin() {
 
 function main() {
   local pipelines
-  pipelines=("alfredo" "alfredo-canaries" "canibump" "cf-release" "cf-release-final" "mkman" "multierror" "runtime-ci" "runtime-dev-envs")
+  pipelines=("alfredo" "alfredo-canaries" "canibump" "cf-release" "cf-release-final" "multierror" "runtime-ci" "runtime-dev-envs")
 
   for pipeline in ${pipelines[@]}; do
     fly -t runtime checklist -p "${pipeline}" > "${pipeline}"
