@@ -21,7 +21,7 @@ function main() {
   pipelines=("alfredo" "alfredo-canaries" "canibump" "cf-release" "cf-release-final" "multierror" "runtime-ci" "runtime-dev-envs" "build-docker-images")
 
   for pipeline in ${pipelines[@]}; do
-    fly -t runtime checklist -p "${pipeline}" > "${pipeline}"
+    fly -t runtime-ci checklist -p "${pipeline}" > "${pipeline}"
   done
 
   add_canibump
