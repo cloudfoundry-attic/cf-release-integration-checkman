@@ -1,0 +1,5 @@
+#- nats-release
+deploy-nats: concourse.check https://runtime.ci.cf-app.com nats-release deploy-nats
+run-smoke-tests: concourse.check https://runtime.ci.cf-app.com nats-release run-smoke-tests
+setup-infrastructure: concourse.check https://runtime.ci.cf-app.com nats-release setup-infrastructure
+

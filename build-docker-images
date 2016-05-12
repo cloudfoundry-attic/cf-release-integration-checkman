@@ -1,4 +1,5 @@
 #- build-docker-images
+trigger-all-image-builds: concourse.check https://runtime.ci.cf-app.com build-docker-images trigger-all-image-builds
 build-announce-rc-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-announce-rc-docker-image
 build-can-bump-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-can-bump-docker-image
 build-cannot-bump-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-cannot-bump-docker-image
@@ -32,3 +33,7 @@ build-runtime-ci-tests-docker-image: concourse.check https://runtime.ci.cf-app.c
 build-unit-tests-cf-deployment-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-unit-tests-cf-deployment-docker-image
 build-validate-all-jobs-public-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-validate-all-jobs-public-docker-image
 build-validate-branch-freshness-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-validate-branch-freshness-docker-image
+build-generate-deployment-manifest-from-bbl-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-generate-deployment-manifest-from-bbl-docker-image
+build-setup-infrastructure-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-setup-infrastructure-docker-image
+build-check-deployment-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-check-deployment-docker-image
+
