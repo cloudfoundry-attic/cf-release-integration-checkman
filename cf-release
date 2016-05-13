@@ -19,9 +19,6 @@ rc: concourse.check https://runtime.ci.cf-app.com cf-release rc
 #- bosh
 clean-all-the-boshes: concourse.check https://runtime.ci.cf-app.com cf-release clean-all-the-boshes
 
-#- pipeline-image
-build-pipeline-image: concourse.check https://runtime.ci.cf-app.com cf-release build-pipeline-image
-
 #- smokes
 tabasco-runtime-smokes: concourse.check https://runtime.ci.cf-app.com cf-release tabasco-runtime-smokes
 tabasco-loggregator-smokes: concourse.check https://runtime.ci.cf-app.com cf-release tabasco-loggregator-smokes
