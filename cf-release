@@ -24,9 +24,4 @@ tabasco-loggregator-smokes: concourse.check https://runtime.ci.cf-app.com cf-rel
 a1-runtime-smokes: concourse.check https://runtime.ci.cf-app.com cf-release a1-runtime-smokes
 a1-loggregator-smokes: concourse.check https://runtime.ci.cf-app.com cf-release a1-loggregator-smokes
 
-#- canaries
-push-a1-canaries: concourse.check https://runtime.ci.cf-app.com cf-release push-a1-canaries
-push-a1-diego-canaries: concourse.check https://runtime.ci.cf-app.com cf-release push-a1-diego-canaries
-push-tabasco-canaries: concourse.check https://runtime.ci.cf-app.com cf-release push-tabasco-canaries
-
 
