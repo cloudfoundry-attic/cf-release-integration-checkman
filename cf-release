@@ -4,7 +4,10 @@ cf-release-branch-freshness: concourse.check https://runtime.ci.cf-app.com cf-re
 create-release: concourse.check https://runtime.ci.cf-app.com cf-release create-release
 deploy-and-test-tabasco: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-tabasco
 deploy-and-test-openstack: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-openstack
-deploy-and-test-bosh-lite: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-bosh-lite
+provision-bosh-lite: concourse.check https://runtime.ci.cf-app.com cf-release provision-bosh-lite
+bosh-lite-cf-deploy: concourse.check https://runtime.ci.cf-app.com cf-release bosh-lite-cf-deploy
+bosh-lite-smoke-tests: concourse.check https://runtime.ci.cf-app.com cf-release bosh-lite-smoke-tests
+bosh-lite-acceptance-tests: concourse.check https://runtime.ci.cf-app.com cf-release bosh-lite-acceptance-tests
 deploy-and-test-minimal: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-minimal
 a1-cf-deploy: concourse.check https://runtime.ci.cf-app.com cf-release a1-cf-deploy
 a1-smoke-tests: concourse.check https://runtime.ci.cf-app.com cf-release a1-smoke-tests
