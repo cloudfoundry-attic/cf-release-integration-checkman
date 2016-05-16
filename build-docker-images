@@ -20,8 +20,6 @@ build-generate-diego-manifest-docker-image: concourse.check https://runtime.ci.c
 build-merge-master-into-develop-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-merge-master-into-develop-docker-image
 build-multierror-tests-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-multierror-tests-docker-image
 build-provision-bosh-lite-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-provision-bosh-lite-docker-image
-build-push-canaries-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-push-canaries-docker-image
-build-push-diego-canary-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-push-diego-canary-docker-image
 build-record-compatible-versions-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-record-compatible-versions-docker-image
 build-request-pm-input-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-request-pm-input-docker-image
 build-run-bosh-cleanup-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-run-bosh-cleanup-docker-image
