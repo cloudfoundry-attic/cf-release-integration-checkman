@@ -14,6 +14,7 @@ function remove_rubbish_bin() {
   sed -i '' '/deploy-and-test-a1/d' cf-release
   sed -i '' '/a1-diego-deploy-and-test/d' cf-release
   sed -i '' '/deploy-and-test-vsphere/d' cf-release
+  sed -i '' '/deploy-and-test-tabasco/d' cf-release
 }
 
 function main() {
