@@ -11,7 +11,6 @@ build-create-release-docker-image: concourse.check https://runtime.ci.cf-app.com
 build-create-release-notes-template-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-create-release-notes-template-docker-image
 build-delete-deployment-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-delete-deployment-docker-image
 build-deploy-cf-alone-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-deploy-cf-alone-docker-image
-build-deploy-cf-to-bosh-lite-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-deploy-cf-to-bosh-lite-docker-image
 build-deprovision-bosh-lite-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-deprovision-bosh-lite-docker-image
 build-emit-datadog-event-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-emit-datadog-event-docker-image
 build-emit-datadog-metric-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-emit-datadog-metric-docker-image
@@ -34,4 +33,12 @@ build-validate-branch-freshness-docker-image: concourse.check https://runtime.ci
 build-generate-deployment-manifest-from-bbl-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-generate-deployment-manifest-from-bbl-docker-image
 build-setup-infrastructure-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-setup-infrastructure-docker-image
 build-check-deployment-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-check-deployment-docker-image
+build-create-bosh-lite-creds-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-create-bosh-lite-creds-docker-image
+build-create-bosh-lite-stub-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-create-bosh-lite-stub-docker-image
+build-create-diego-manifest-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-create-diego-manifest-docker-image
+build-run-errand-bbl-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-run-errand-bbl-docker-image
+build-write-bosh-target-file-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-write-bosh-target-file-docker-image
+build-bosh-deploy-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-bosh-deploy-docker-image
+build-verify-every-task-has-docker-image-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-verify-every-task-has-docker-image-docker-image
+build-verify-every-task-has-docker-build-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-verify-every-task-has-docker-build-docker-image
 
