@@ -3,8 +3,8 @@ cf-release-unit-tests: concourse.check https://runtime.ci.cf-app.com cf-release 
 cf-release-branch-freshness: concourse.check https://runtime.ci.cf-app.com cf-release cf-release-branch-freshness
 create-release: concourse.check https://runtime.ci.cf-app.com cf-release create-release
 deploy-and-test-openstack: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-openstack
-bosh-lite-provision: concourse.check https://runtime.ci.cf-app.com cf-release bosh-lite-provision
-bosh-lite-cf-deploy: concourse.check https://runtime.ci.cf-app.com cf-release bosh-lite-cf-deploy
+bosh-lite-provision-cf-deploy: concourse.check https://runtime.ci.cf-app.com cf-release bosh-lite-provision-cf-deploy
+bosh-lite-diego-deploy: concourse.check https://runtime.ci.cf-app.com cf-release bosh-lite-diego-deploy
 bosh-lite-smoke-tests: concourse.check https://runtime.ci.cf-app.com cf-release bosh-lite-smoke-tests
 bosh-lite-acceptance-tests: concourse.check https://runtime.ci.cf-app.com cf-release bosh-lite-acceptance-tests
 deploy-and-test-minimal: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-minimal
