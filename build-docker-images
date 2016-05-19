@@ -41,4 +41,5 @@ build-write-bosh-target-file-docker-image: concourse.check https://runtime.ci.cf
 build-bosh-deploy-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-bosh-deploy-docker-image
 build-verify-every-task-has-correct-docker-image-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-verify-every-task-has-correct-docker-image-docker-image
 build-verify-every-task-has-docker-build-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-verify-every-task-has-docker-build-docker-image
+build-create-iaas-settings-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-create-iaas-settings-docker-image
 
