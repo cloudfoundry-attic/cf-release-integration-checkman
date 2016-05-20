@@ -6,14 +6,14 @@ deploy-and-test-openstack: concourse.check https://runtime.ci.cf-app.com cf-rele
 bosh-lite-provision-cf-deploy: concourse.check https://runtime.ci.cf-app.com cf-release bosh-lite-provision-cf-deploy
 bosh-lite-smoke-tests: concourse.check https://runtime.ci.cf-app.com cf-release bosh-lite-smoke-tests
 bosh-lite-acceptance-tests: concourse.check https://runtime.ci.cf-app.com cf-release bosh-lite-acceptance-tests
-deploy-and-test-minimal: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-minimal
+deploy-minimal: concourse.check https://runtime.ci.cf-app.com cf-release deploy-minimal
+minimal-acceptance-tests: concourse.check https://runtime.ci.cf-app.com cf-release minimal-acceptance-tests
 generate-a1-manifests: concourse.check https://runtime.ci.cf-app.com cf-release generate-a1-manifests
 generate-bosh-lite-manifests: concourse.check https://runtime.ci.cf-app.com cf-release generate-bosh-lite-manifests
 generate-vsphere-manifests: concourse.check https://runtime.ci.cf-app.com cf-release generate-vsphere-manifests
 a1-cf-deploy: concourse.check https://runtime.ci.cf-app.com cf-release a1-cf-deploy
 a1-smoke-tests: concourse.check https://runtime.ci.cf-app.com cf-release a1-smoke-tests
 a1-diego-cats: concourse.check https://runtime.ci.cf-app.com cf-release a1-diego-cats
-a1-diego-cats-task: concourse.check https://runtime.ci.cf-app.com cf-release a1-diego-cats-task
 vsphere-cf-deploy: concourse.check https://runtime.ci.cf-app.com cf-release vsphere-cf-deploy
 vsphere-smoke-tests: concourse.check https://runtime.ci.cf-app.com cf-release vsphere-smoke-tests
 vsphere-cf-cats: concourse.check https://runtime.ci.cf-app.com cf-release vsphere-cf-cats
@@ -25,5 +25,4 @@ clean-all-the-boshes: concourse.check https://runtime.ci.cf-app.com cf-release c
 #- smokes
 a1-runtime-smokes: concourse.check https://runtime.ci.cf-app.com cf-release a1-runtime-smokes
 a1-loggregator-smokes: concourse.check https://runtime.ci.cf-app.com cf-release a1-loggregator-smokes
-
 
