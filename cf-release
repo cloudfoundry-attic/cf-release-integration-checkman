@@ -4,14 +4,14 @@ cf-release-branch-freshness: concourse.check https://runtime.ci.cf-app.com cf-re
 create-release: concourse.check https://runtime.ci.cf-app.com cf-release create-release
 deploy-and-test-openstack: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-openstack
 bosh-lite-provision-cf-deploy: concourse.check https://runtime.ci.cf-app.com cf-release bosh-lite-provision-cf-deploy
-bosh-lite-diego-deploy: concourse.check https://runtime.ci.cf-app.com cf-release bosh-lite-diego-deploy
 bosh-lite-smoke-tests: concourse.check https://runtime.ci.cf-app.com cf-release bosh-lite-smoke-tests
 bosh-lite-acceptance-tests: concourse.check https://runtime.ci.cf-app.com cf-release bosh-lite-acceptance-tests
 deploy-and-test-minimal: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-minimal
 generate-a1-manifests: concourse.check https://runtime.ci.cf-app.com cf-release generate-a1-manifests
+generate-bosh-lite-manifests: concourse.check https://runtime.ci.cf-app.com cf-release generate-bosh-lite-manifests
+generate-vsphere-manifests: concourse.check https://runtime.ci.cf-app.com cf-release generate-vsphere-manifests
 a1-cf-deploy: concourse.check https://runtime.ci.cf-app.com cf-release a1-cf-deploy
 a1-smoke-tests: concourse.check https://runtime.ci.cf-app.com cf-release a1-smoke-tests
-a1-diego-deploy: concourse.check https://runtime.ci.cf-app.com cf-release a1-diego-deploy
 a1-diego-cats: concourse.check https://runtime.ci.cf-app.com cf-release a1-diego-cats
 a1-diego-cats-task: concourse.check https://runtime.ci.cf-app.com cf-release a1-diego-cats-task
 vsphere-cf-deploy: concourse.check https://runtime.ci.cf-app.com cf-release vsphere-cf-deploy
@@ -23,8 +23,6 @@ rc: concourse.check https://runtime.ci.cf-app.com cf-release rc
 clean-all-the-boshes: concourse.check https://runtime.ci.cf-app.com cf-release clean-all-the-boshes
 
 #- smokes
-tabasco-runtime-smokes: concourse.check https://runtime.ci.cf-app.com cf-release tabasco-runtime-smokes
-tabasco-loggregator-smokes: concourse.check https://runtime.ci.cf-app.com cf-release tabasco-loggregator-smokes
 a1-runtime-smokes: concourse.check https://runtime.ci.cf-app.com cf-release a1-runtime-smokes
 a1-loggregator-smokes: concourse.check https://runtime.ci.cf-app.com cf-release a1-loggregator-smokes
 
