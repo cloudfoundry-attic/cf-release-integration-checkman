@@ -26,3 +26,6 @@ clean-all-the-boshes: concourse.check https://runtime.ci.cf-app.com cf-release c
 a1-runtime-smokes: concourse.check https://runtime.ci.cf-app.com cf-release a1-runtime-smokes
 a1-loggregator-smokes: concourse.check https://runtime.ci.cf-app.com cf-release a1-loggregator-smokes
 
+#- misc
+bosh-lite-diego-cats: concourse.check https://runtime.ci.cf-app.com cf-release bosh-lite-diego-cats
+

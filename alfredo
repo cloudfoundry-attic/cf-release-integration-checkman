@@ -1,8 +1,0 @@
-#- alfredo
-cf-deployment-unit-tests: concourse.check https://runtime.ci.cf-app.com alfredo cf-deployment-unit-tests
-deploy-cf: concourse.check https://runtime.ci.cf-app.com alfredo deploy-cf
-run-smoke-tests: concourse.check https://runtime.ci.cf-app.com alfredo run-smoke-tests
-run-cats: concourse.check https://runtime.ci.cf-app.com alfredo run-cats
-bless: concourse.check https://runtime.ci.cf-app.com alfredo bless
-merge-master-into-develop: concourse.check https://runtime.ci.cf-app.com alfredo merge-master-into-develop
-

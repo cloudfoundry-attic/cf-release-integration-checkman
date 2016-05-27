@@ -19,7 +19,7 @@ function remove_rubbish_bin() {
 
 function main() {
   local pipelines
-  pipelines=("alfredo" "canibump" "cf-release" "cf-release-final" "multierror" "runtime-ci" "runtime-dev-envs" "build-docker-images" "nats-release")
+  pipelines=("canibump" "cf-release" "cf-release-final" "multierror" "runtime-ci" "runtime-dev-envs" "build-docker-images" "nats-release")
 
   for pipeline in ${pipelines[@]}; do
     fly -t runtime-ci checklist -p "${pipeline}" > "${pipeline}"
