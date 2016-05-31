@@ -6,6 +6,7 @@ deploy-and-test-openstack: concourse.check https://runtime.ci.cf-app.com cf-rele
 bosh-lite-provision-cf-deploy: concourse.check https://runtime.ci.cf-app.com cf-release bosh-lite-provision-cf-deploy
 bosh-lite-smoke-tests: concourse.check https://runtime.ci.cf-app.com cf-release bosh-lite-smoke-tests
 bosh-lite-acceptance-tests: concourse.check https://runtime.ci.cf-app.com cf-release bosh-lite-acceptance-tests
+bosh-lite-diego-cats: concourse.check https://runtime.ci.cf-app.com cf-release bosh-lite-diego-cats
 deploy-minimal: concourse.check https://runtime.ci.cf-app.com cf-release deploy-minimal
 minimal-acceptance-tests: concourse.check https://runtime.ci.cf-app.com cf-release minimal-acceptance-tests
 generate-a1-manifests: concourse.check https://runtime.ci.cf-app.com cf-release generate-a1-manifests
@@ -25,7 +26,4 @@ clean-all-the-boshes: concourse.check https://runtime.ci.cf-app.com cf-release c
 #- smokes
 a1-runtime-smokes: concourse.check https://runtime.ci.cf-app.com cf-release a1-runtime-smokes
 a1-loggregator-smokes: concourse.check https://runtime.ci.cf-app.com cf-release a1-loggregator-smokes
-
-#- misc
-bosh-lite-diego-cats: concourse.check https://runtime.ci.cf-app.com cf-release bosh-lite-diego-cats
 
