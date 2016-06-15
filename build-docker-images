@@ -25,8 +25,10 @@ build-run-errand-docker-image: concourse.check https://runtime.ci.cf-app.com bui
 build-run-smoketests-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-run-smoketests-docker-image
 build-validate-all-jobs-public-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-validate-all-jobs-public-docker-image
 build-validate-branch-freshness-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-validate-branch-freshness-docker-image
-build-generate-deployment-manifest-from-bbl-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-generate-deployment-manifest-from-bbl-docker-image
+build-generate-nats-deployment-manifest-from-bbl-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-generate-nats-deployment-manifest-from-bbl-docker-image
 build-setup-infrastructure-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-setup-infrastructure-docker-image
+build-extract-director-creds-from-bbl-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-extract-director-creds-from-bbl-docker-image
+build-destroy-infrastructure-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-destroy-infrastructure-docker-image
 build-check-deployment-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-check-deployment-docker-image
 build-create-bosh-lite-creds-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-create-bosh-lite-creds-docker-image
 build-create-bosh-lite-stub-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-create-bosh-lite-stub-docker-image
@@ -39,4 +41,6 @@ build-verify-every-task-has-correct-docker-image-docker-image: concourse.check h
 build-verify-every-task-has-docker-build-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-verify-every-task-has-docker-build-docker-image
 build-create-iaas-settings-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-create-iaas-settings-docker-image
 build-write-bosh-lite-api-target-file-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-write-bosh-lite-api-target-file-docker-image
+build-bind-elb-to-r53-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-bind-elb-to-r53-docker-image
+build-cats-from-cf-release-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-cats-from-cf-release-docker-image
 
