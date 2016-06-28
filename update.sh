@@ -9,14 +9,6 @@ canibump: curl -f -s https://canibump.cfapps.io | grep -q YES <(grep -A1 'id="ca
 EOF
 }
 
-function remove_rubbish_bin() {
-  sed -i '' '/rubbish-bin/d' cf-release
-  sed -i '' '/deploy-and-test-a1/d' cf-release
-  sed -i '' '/a1-diego-deploy-and-test/d' cf-release
-  sed -i '' '/deploy-and-test-vsphere/d' cf-release
-  sed -i '' '/deploy-and-test-tabasco/d' cf-release
-}
-
 function main() {
   local pipelines
   pipelines=("canibump" "cf-release" "cf-release-final" "multierror" "runtime-ci" "runtime-dev-envs" "build-docker-images" "nats-release")
@@ -26,8 +18,6 @@ function main() {
   done
 
   add_canibump
-
-  remove_rubbish_bin
 }
 
 main
