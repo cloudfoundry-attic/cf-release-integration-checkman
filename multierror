@@ -1,3 +1,0 @@
-#- multierror
-test-multierror: concourse.check https://runtime.ci.cf-app.com multierror test-multierror
-

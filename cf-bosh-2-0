@@ -1,0 +1,5 @@
+#- bosh-2.0
+destroy-infrastructure: concourse.check https://runtime.ci.cf-app.com cf-bosh-2-0 destroy-infrastructure
+setup-infrastructure: concourse.check https://runtime.ci.cf-app.com cf-bosh-2-0 setup-infrastructure
+deploy-releases: concourse.check https://runtime.ci.cf-app.com cf-bosh-2-0 deploy-releases
+
