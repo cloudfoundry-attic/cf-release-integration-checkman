@@ -14,7 +14,6 @@ build-emit-datadog-event-docker-image: concourse.check https://runtime.ci.cf-app
 build-emit-datadog-metric-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-emit-datadog-metric-docker-image
 build-enable-docker-diego-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-enable-docker-diego-docker-image
 build-merge-master-into-develop-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-merge-master-into-develop-docker-image
-build-multierror-tests-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-multierror-tests-docker-image
 build-provision-bosh-lite-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-provision-bosh-lite-docker-image
 build-record-compatible-versions-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-record-compatible-versions-docker-image
 build-request-pm-input-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-request-pm-input-docker-image
