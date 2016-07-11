@@ -2,4 +2,5 @@
 all-jobs-public: concourse.check https://runtime.ci.cf-app.com runtime-ci all-jobs-public
 verify-every-task-has-correct-docker-image: concourse.check https://runtime.ci.cf-app.com runtime-ci verify-every-task-has-correct-docker-image
 verify-every-task-has-docker-build: concourse.check https://runtime.ci.cf-app.com runtime-ci verify-every-task-has-docker-build
+verify-every-task-is-used-in-a-pipeline: concourse.check https://runtime.ci.cf-app.com runtime-ci verify-every-task-is-used-in-a-pipeline
 

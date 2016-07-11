@@ -39,6 +39,7 @@ build-bosh-deploy-docker-image: concourse.check https://runtime.ci.cf-app.com bu
 build-bosh-upload-release-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-bosh-upload-release-docker-image
 build-verify-every-task-has-correct-docker-image-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-verify-every-task-has-correct-docker-image-docker-image
 build-verify-every-task-has-docker-build-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-verify-every-task-has-docker-build-docker-image
+build-verify-every-task-is-used-in-a-pipeline-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-verify-every-task-is-used-in-a-pipeline-docker-image
 build-create-iaas-settings-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-create-iaas-settings-docker-image
 build-write-bosh-lite-api-target-file-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-write-bosh-lite-api-target-file-docker-image
 build-bind-elb-to-r53-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-bind-elb-to-r53-docker-image
@@ -46,4 +47,10 @@ build-unbind-elb-from-r53-docker-image: concourse.check https://runtime.ci.cf-ap
 build-cats-from-cf-release-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-cats-from-cf-release-docker-image
 build-check-out-fixed-version-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-check-out-fixed-version-docker-image
 build-bosh-uuid-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-bosh-uuid-docker-image
+build-run-ginkgo-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-run-ginkgo-docker-image
+
+#- run-cats-tests
+test-cats-golang: concourse.check https://runtime.ci.cf-app.com build-docker-images test-cats-golang
+fake-run-cats: concourse.check https://runtime.ci.cf-app.com build-docker-images fake-run-cats
+build-run-cats-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-run-cats-docker-image
 
