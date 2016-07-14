@@ -46,9 +46,10 @@ build-unbind-elb-from-r53-docker-image: concourse.check https://runtime.ci.cf-ap
 build-cats-from-cf-release-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-cats-from-cf-release-docker-image
 build-bosh-uuid-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-bosh-uuid-docker-image
 build-run-ginkgo-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-run-ginkgo-docker-image
+build-recreate-datadog-dashboard-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-recreate-datadog-dashboard-docker-image
+build-recreate-datadog-dashboard-unit-tests-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-recreate-datadog-dashboard-unit-tests-docker-image
 
 #- run-cats-tests
 test-cats-golang: concourse.check https://runtime.ci.cf-app.com build-docker-images test-cats-golang
-fake-run-cats: concourse.check https://runtime.ci.cf-app.com build-docker-images fake-run-cats
 build-run-cats-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-run-cats-docker-image
 
