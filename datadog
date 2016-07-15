@@ -1,0 +1,3 @@
+#- datadog
+recreate-datadog-dashboards: concourse.check https://runtime.ci.cf-app.com datadog recreate-datadog-dashboards
+

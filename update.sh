@@ -11,7 +11,7 @@ EOF
 
 function main() {
   local pipelines
-  pipelines=("canibump" "cf-release" "cf-release-final" "runtime-ci" "runtime-dev-envs" "build-docker-images" "nats-release" "cf-bosh-2-0")
+  pipelines=("canibump" "cf-release" "cf-release-final" "runtime-ci" "runtime-dev-envs" "build-docker-images" "nats-release" "cf-bosh-2-0" "datadog")
 
   for pipeline in ${pipelines[@]}; do
     fly -t runtime-ci checklist -p "${pipeline}" > "${pipeline}"
