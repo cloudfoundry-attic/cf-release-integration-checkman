@@ -45,6 +45,10 @@ build-cats-from-cf-release-docker-image: concourse.check https://runtime.ci.cf-a
 build-bosh-uuid-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-bosh-uuid-docker-image
 build-run-ginkgo-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-run-ginkgo-docker-image
 build-recreate-datadog-dashboard-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-recreate-datadog-dashboard-docker-image
+build-extend-bosh-lite-diego-stub-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-extend-bosh-lite-diego-stub-docker-image
+build-create-releases-manifest-section-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-create-releases-manifest-section-docker-image
+build-extract-elb-and-security-groups-from-bbl-stack-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-extract-elb-and-security-groups-from-bbl-stack-docker-image
+build-extend-cf-router-resources-pool-cf-deployment-manifest-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-extend-cf-router-resources-pool-cf-deployment-manifest-docker-image
 
 #- run-cats-tests
 test-cats-golang: concourse.check https://runtime.ci.cf-app.com build-docker-images test-cats-golang
