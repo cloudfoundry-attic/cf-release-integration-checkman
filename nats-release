@@ -1,5 +1,7 @@
 #- nats-release
-deploy-nats: concourse.check https://runtime.ci.cf-app.com nats-release deploy-nats
-run-smoke-tests: concourse.check https://runtime.ci.cf-app.com nats-release run-smoke-tests
+deploy-nats-standalone: concourse.check https://runtime.ci.cf-app.com nats-release deploy-nats-standalone
+deploy-cf-with-updated-nats: concourse.check https://runtime.ci.cf-app.com nats-release deploy-cf-with-updated-nats
+smoke-tests: concourse.check https://runtime.ci.cf-app.com nats-release smoke-tests
 setup-infrastructure: concourse.check https://runtime.ci.cf-app.com nats-release setup-infrastructure
+upload-stemcell: concourse.check https://runtime.ci.cf-app.com nats-release upload-stemcell
 

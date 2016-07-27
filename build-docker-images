@@ -35,6 +35,7 @@ build-run-errand-bbl-docker-image: concourse.check https://runtime.ci.cf-app.com
 build-write-target-file-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-write-target-file-docker-image
 build-bosh-deploy-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-bosh-deploy-docker-image
 build-bosh-upload-release-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-bosh-upload-release-docker-image
+build-bosh-upload-stemcell-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-bosh-upload-stemcell-docker-image
 build-verify-every-task-has-correct-docker-image-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-verify-every-task-has-correct-docker-image-docker-image
 build-verify-every-task-has-docker-build-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-verify-every-task-has-docker-build-docker-image
 build-verify-every-task-is-used-in-a-pipeline-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-verify-every-task-is-used-in-a-pipeline-docker-image
@@ -46,9 +47,9 @@ build-bosh-uuid-docker-image: concourse.check https://runtime.ci.cf-app.com buil
 build-run-ginkgo-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-run-ginkgo-docker-image
 build-recreate-datadog-dashboard-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-recreate-datadog-dashboard-docker-image
 build-extend-bosh-lite-diego-stub-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-extend-bosh-lite-diego-stub-docker-image
-build-create-releases-manifest-section-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-create-releases-manifest-section-docker-image
-build-extract-elb-and-security-groups-from-bbl-stack-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-extract-elb-and-security-groups-from-bbl-stack-docker-image
-build-extend-cf-router-resources-pool-cf-deployment-manifest-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-extend-cf-router-resources-pool-cf-deployment-manifest-docker-image
+build-extract-cloudformation-properties-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-extract-cloudformation-properties-docker-image
+build-create-binaries-manifest-section-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-create-binaries-manifest-section-docker-image
+build-extend-deployment-manifest-with-security-groups-and-elb-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-extend-deployment-manifest-with-security-groups-and-elb-docker-image
 
 #- run-cats-tests
 test-cats-golang: concourse.check https://runtime.ci.cf-app.com build-docker-images test-cats-golang

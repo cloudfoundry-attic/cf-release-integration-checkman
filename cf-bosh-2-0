@@ -1,4 +1,5 @@
 #- cf-bosh-2-0
+bless-manifest: concourse.check https://runtime.ci.cf-app.com cf-bosh-2-0 bless-manifest
 deploy-releases: concourse.check https://runtime.ci.cf-app.com cf-bosh-2-0 deploy-releases
 destroy-infrastructure: concourse.check https://runtime.ci.cf-app.com cf-bosh-2-0 destroy-infrastructure
 hermione-diego-cats: concourse.check https://runtime.ci.cf-app.com cf-bosh-2-0 hermione-diego-cats
