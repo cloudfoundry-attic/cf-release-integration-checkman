@@ -4,4 +4,6 @@ deploy-cf-with-updated-nats: concourse.check https://runtime.ci.cf-app.com nats-
 smoke-tests: concourse.check https://runtime.ci.cf-app.com nats-release smoke-tests
 setup-infrastructure: concourse.check https://runtime.ci.cf-app.com nats-release setup-infrastructure
 upload-stemcell: concourse.check https://runtime.ci.cf-app.com nats-release upload-stemcell
+cats-tests: concourse.check https://runtime.ci.cf-app.com nats-release cats-tests
+delete-deployment: concourse.check https://runtime.ci.cf-app.com nats-release delete-deployment
 
