@@ -1,22 +1,21 @@
 #- cf-release
-cf-release-unit-tests: concourse.check https://runtime.ci.cf-app.com cf-release cf-release-unit-tests
-cf-release-branch-freshness: concourse.check https://runtime.ci.cf-app.com cf-release cf-release-branch-freshness
+unit-tests: concourse.check https://runtime.ci.cf-app.com cf-release unit-tests
+branch-freshness: concourse.check https://runtime.ci.cf-app.com cf-release branch-freshness
 create-release: concourse.check https://runtime.ci.cf-app.com cf-release create-release
-deploy-and-test-openstack: concourse.check https://runtime.ci.cf-app.com cf-release deploy-and-test-openstack
-bosh-lite-provision-cf-deploy: concourse.check https://runtime.ci.cf-app.com cf-release bosh-lite-provision-cf-deploy
+deploy-bosh-lite: concourse.check https://runtime.ci.cf-app.com cf-release deploy-bosh-lite
 bosh-lite-smoke-tests: concourse.check https://runtime.ci.cf-app.com cf-release bosh-lite-smoke-tests
 bosh-lite-acceptance-tests: concourse.check https://runtime.ci.cf-app.com cf-release bosh-lite-acceptance-tests
-deploy-minimal: concourse.check https://runtime.ci.cf-app.com cf-release deploy-minimal
+generate-minimal-manifest-and-deploy: concourse.check https://runtime.ci.cf-app.com cf-release generate-minimal-manifest-and-deploy
 minimal-acceptance-tests: concourse.check https://runtime.ci.cf-app.com cf-release minimal-acceptance-tests
-generate-a1-manifests: concourse.check https://runtime.ci.cf-app.com cf-release generate-a1-manifests
+generate-aws-manifests: concourse.check https://runtime.ci.cf-app.com cf-release generate-aws-manifests
 generate-bosh-lite-manifests: concourse.check https://runtime.ci.cf-app.com cf-release generate-bosh-lite-manifests
 generate-vsphere-manifests: concourse.check https://runtime.ci.cf-app.com cf-release generate-vsphere-manifests
-a1-cf-deploy: concourse.check https://runtime.ci.cf-app.com cf-release a1-cf-deploy
-a1-smoke-tests: concourse.check https://runtime.ci.cf-app.com cf-release a1-smoke-tests
-a1-diego-cats: concourse.check https://runtime.ci.cf-app.com cf-release a1-diego-cats
-vsphere-cf-deploy: concourse.check https://runtime.ci.cf-app.com cf-release vsphere-cf-deploy
+deploy-aws: concourse.check https://runtime.ci.cf-app.com cf-release deploy-aws
+aws-smoke-tests: concourse.check https://runtime.ci.cf-app.com cf-release aws-smoke-tests
+aws-acceptance-tests: concourse.check https://runtime.ci.cf-app.com cf-release aws-acceptance-tests
+deploy-vsphere: concourse.check https://runtime.ci.cf-app.com cf-release deploy-vsphere
 vsphere-smoke-tests: concourse.check https://runtime.ci.cf-app.com cf-release vsphere-smoke-tests
-vsphere-cf-cats: concourse.check https://runtime.ci.cf-app.com cf-release vsphere-cf-cats
+vsphere-acceptance-tests: concourse.check https://runtime.ci.cf-app.com cf-release vsphere-acceptance-tests
 rc: concourse.check https://runtime.ci.cf-app.com cf-release rc
 
 #- bosh

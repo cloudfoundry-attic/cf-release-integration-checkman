@@ -53,6 +53,7 @@ build-create-binaries-manifest-section-docker-image: concourse.check https://run
 build-extend-deployment-manifest-with-security-groups-and-elb-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-extend-deployment-manifest-with-security-groups-and-elb-docker-image
 build-commit-generated-manifest-to-master-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-commit-generated-manifest-to-master-docker-image
 build-fast-forward-master-to-develop-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-fast-forward-master-to-develop-docker-image
+build-create-final-release-bucket-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-create-final-release-bucket-docker-image
 
 #- run-cats-tests
 test-cats-golang: concourse.check https://runtime.ci.cf-app.com build-docker-images test-cats-golang
