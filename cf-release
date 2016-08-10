@@ -1,4 +1,5 @@
 #- cf-release
+my-new-job-untar: concourse.check https://runtime.ci.cf-app.com cf-release my-new-job-untar
 unit-tests: concourse.check https://runtime.ci.cf-app.com cf-release unit-tests
 branch-freshness: concourse.check https://runtime.ci.cf-app.com cf-release branch-freshness
 create-release: concourse.check https://runtime.ci.cf-app.com cf-release create-release

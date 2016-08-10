@@ -7,10 +7,8 @@ upload-stemcell: concourse.check https://runtime.ci.cf-app.com nats-release uplo
 cats-tests: concourse.check https://runtime.ci.cf-app.com nats-release cats-tests
 create-final-release: concourse.check https://runtime.ci.cf-app.com nats-release create-final-release
 delete-deployment: concourse.check https://runtime.ci.cf-app.com nats-release delete-deployment
+verify-nameserver-has-record: concourse.check https://runtime.ci.cf-app.com nats-release verify-nameserver-has-record
 
 #- buckets
 create-nats-release-bucket: concourse.check https://runtime.ci.cf-app.com nats-release create-nats-release-bucket
-
-#- misc
-create-nats-release-blobs-bucket: concourse.check https://runtime.ci.cf-app.com nats-release create-nats-release-blobs-bucket
 

@@ -1,7 +1,11 @@
 #- cf-bosh-2-0
-bless-manifest: concourse.check https://runtime.ci.cf-app.com cf-bosh-2-0 bless-manifest
+update-releases: concourse.check https://runtime.ci.cf-app.com cf-bosh-2-0 update-releases
 deploy-releases: concourse.check https://runtime.ci.cf-app.com cf-bosh-2-0 deploy-releases
-destroy-infrastructure: concourse.check https://runtime.ci.cf-app.com cf-bosh-2-0 destroy-infrastructure
 hermione-diego-cats: concourse.check https://runtime.ci.cf-app.com cf-bosh-2-0 hermione-diego-cats
+bless-manifest: concourse.check https://runtime.ci.cf-app.com cf-bosh-2-0 bless-manifest
+
+#- infrastructure
 setup-infrastructure: concourse.check https://runtime.ci.cf-app.com cf-bosh-2-0 setup-infrastructure
+destroy-infrastructure: concourse.check https://runtime.ci.cf-app.com cf-bosh-2-0 destroy-infrastructure
+verify-nameserver-has-record: concourse.check https://runtime.ci.cf-app.com cf-bosh-2-0 verify-nameserver-has-record
 
