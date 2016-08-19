@@ -1,5 +1,8 @@
 #- nats-release
+create-release: concourse.check https://runtime.ci.cf-app.com nats-release create-release
 deploy-nats-standalone: concourse.check https://runtime.ci.cf-app.com nats-release deploy-nats-standalone
+deploy-1-0-nats-standalone: concourse.check https://runtime.ci.cf-app.com nats-release deploy-1-0-nats-standalone
+smoke-tests-1-0: concourse.check https://runtime.ci.cf-app.com nats-release smoke-tests-1-0
 deploy-cf-with-updated-nats: concourse.check https://runtime.ci.cf-app.com nats-release deploy-cf-with-updated-nats
 smoke-tests: concourse.check https://runtime.ci.cf-app.com nats-release smoke-tests
 setup-infrastructure: concourse.check https://runtime.ci.cf-app.com nats-release setup-infrastructure

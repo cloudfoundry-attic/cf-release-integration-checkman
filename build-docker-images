@@ -23,6 +23,7 @@ build-run-smoketests-docker-image: concourse.check https://runtime.ci.cf-app.com
 build-validate-all-jobs-public-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-validate-all-jobs-public-docker-image
 build-validate-branch-freshness-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-validate-branch-freshness-docker-image
 build-generate-nats-deployment-manifest-from-bbl-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-generate-nats-deployment-manifest-from-bbl-docker-image
+build-generate-1-0-nats-deployment-manifest-from-bbl-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-generate-1-0-nats-deployment-manifest-from-bbl-docker-image
 build-setup-infrastructure-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-setup-infrastructure-docker-image
 build-extract-director-creds-from-bbl-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-extract-director-creds-from-bbl-docker-image
 build-destroy-infrastructure-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-destroy-infrastructure-docker-image
@@ -44,7 +45,6 @@ build-create-diego-iaas-settings-docker-image: concourse.check https://runtime.c
 build-bind-elb-to-r53-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-bind-elb-to-r53-docker-image
 build-unbind-elb-from-r53-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-unbind-elb-from-r53-docker-image
 build-cats-from-cf-release-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-cats-from-cf-release-docker-image
-build-set-bosh-uuid-in-manifest-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-set-bosh-uuid-in-manifest-docker-image
 build-run-ginkgo-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-run-ginkgo-docker-image
 build-recreate-datadog-dashboards-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-recreate-datadog-dashboards-docker-image
 build-extend-bosh-lite-diego-stub-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-extend-bosh-lite-diego-stub-docker-image

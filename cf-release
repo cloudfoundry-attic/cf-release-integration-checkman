@@ -5,8 +5,6 @@ create-release: concourse.check https://runtime.ci.cf-app.com cf-release create-
 deploy-bosh-lite: concourse.check https://runtime.ci.cf-app.com cf-release deploy-bosh-lite
 bosh-lite-smoke-tests: concourse.check https://runtime.ci.cf-app.com cf-release bosh-lite-smoke-tests
 bosh-lite-acceptance-tests: concourse.check https://runtime.ci.cf-app.com cf-release bosh-lite-acceptance-tests
-generate-minimal-manifest-and-deploy: concourse.check https://runtime.ci.cf-app.com cf-release generate-minimal-manifest-and-deploy
-minimal-acceptance-tests: concourse.check https://runtime.ci.cf-app.com cf-release minimal-acceptance-tests
 generate-aws-manifests: concourse.check https://runtime.ci.cf-app.com cf-release generate-aws-manifests
 generate-bosh-lite-manifests: concourse.check https://runtime.ci.cf-app.com cf-release generate-bosh-lite-manifests
 generate-vsphere-manifests: concourse.check https://runtime.ci.cf-app.com cf-release generate-vsphere-manifests
@@ -24,4 +22,9 @@ clean-all-the-boshes: concourse.check https://runtime.ci.cf-app.com cf-release c
 #- smokes
 a1-runtime-smokes: concourse.check https://runtime.ci.cf-app.com cf-release a1-runtime-smokes
 a1-loggregator-smokes: concourse.check https://runtime.ci.cf-app.com cf-release a1-loggregator-smokes
+
+#- minimal
+generate-minimal-manifest: concourse.check https://runtime.ci.cf-app.com cf-release generate-minimal-manifest
+deploy-minimal: concourse.check https://runtime.ci.cf-app.com cf-release deploy-minimal
+minimal-acceptance-tests: concourse.check https://runtime.ci.cf-app.com cf-release minimal-acceptance-tests
 
