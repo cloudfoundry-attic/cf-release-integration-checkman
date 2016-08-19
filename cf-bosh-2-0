@@ -1,7 +1,7 @@
-#- cf-bosh-2-0
+#- cf-deployment
 update-releases: concourse.check https://runtime.ci.cf-app.com cf-bosh-2-0 update-releases
 deploy-releases: concourse.check https://runtime.ci.cf-app.com cf-bosh-2-0 deploy-releases
-hermione-diego-cats: concourse.check https://runtime.ci.cf-app.com cf-bosh-2-0 hermione-diego-cats
+acceptance-tests: concourse.check https://runtime.ci.cf-app.com cf-bosh-2-0 acceptance-tests
 bless-manifest: concourse.check https://runtime.ci.cf-app.com cf-bosh-2-0 bless-manifest
 
 #- infrastructure
