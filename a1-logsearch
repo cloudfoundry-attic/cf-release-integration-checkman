@@ -1,0 +1,3 @@
+#- a1-logsearch
+deploy-a1-logsearch: concourse.check https://runtime.ci.cf-app.com a1-logsearch deploy-a1-logsearch
+
