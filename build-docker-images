@@ -60,6 +60,7 @@ build-write-build-url-docker-image: concourse.check https://runtime.ci.cf-app.co
 build-write-director-version-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-write-director-version-docker-image
 build-untar-release-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-untar-release-docker-image
 build-build-metadata-resource-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-build-metadata-resource-docker-image
+build-inject-latest-release-into-deployment-manifest-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-inject-latest-release-into-deployment-manifest-docker-image
 
 #- run-cats-tests
 cats-task-unit-tests: concourse.check https://runtime.ci.cf-app.com build-docker-images cats-task-unit-tests

@@ -8,4 +8,5 @@ bless-manifest: concourse.check https://runtime.ci.cf-app.com cf-bosh-2-0 bless-
 setup-infrastructure: concourse.check https://runtime.ci.cf-app.com cf-bosh-2-0 setup-infrastructure
 destroy-infrastructure: concourse.check https://runtime.ci.cf-app.com cf-bosh-2-0 destroy-infrastructure
 verify-nameserver-has-record: concourse.check https://runtime.ci.cf-app.com cf-bosh-2-0 verify-nameserver-has-record
+run-bosh-cleanup: concourse.check https://runtime.ci.cf-app.com cf-bosh-2-0 run-bosh-cleanup
 
