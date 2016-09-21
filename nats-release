@@ -1,18 +1,26 @@
 #- nats-release
-create-release: concourse.check https://runtime.ci.cf-app.com nats-release create-release
-deploy-nats-standalone: concourse.check https://runtime.ci.cf-app.com nats-release deploy-nats-standalone
-deploy-1-0-nats-standalone: concourse.check https://runtime.ci.cf-app.com nats-release deploy-1-0-nats-standalone
-smoke-tests-1-0: concourse.check https://runtime.ci.cf-app.com nats-release smoke-tests-1-0
-deploy-cf-with-updated-nats: concourse.check https://runtime.ci.cf-app.com nats-release deploy-cf-with-updated-nats
-smoke-tests: concourse.check https://runtime.ci.cf-app.com nats-release smoke-tests
-setup-infrastructure: concourse.check https://runtime.ci.cf-app.com nats-release setup-infrastructure
-destroy-infrastructure: concourse.check https://runtime.ci.cf-app.com nats-release destroy-infrastructure
-upload-stemcell: concourse.check https://runtime.ci.cf-app.com nats-release upload-stemcell
-cats-tests: concourse.check https://runtime.ci.cf-app.com nats-release cats-tests
-create-final-release: concourse.check https://runtime.ci.cf-app.com nats-release create-final-release
-delete-deployment: concourse.check https://runtime.ci.cf-app.com nats-release delete-deployment
-verify-nameserver-has-record: concourse.check https://runtime.ci.cf-app.com nats-release verify-nameserver-has-record
+create-release: concourse.check https://runtime.ci.cf-app.com main nats-release create-release
+upload-stemcell: concourse.check https://runtime.ci.cf-app.com main nats-release upload-stemcell
+upload-stemcell-1-0: concourse.check https://runtime.ci.cf-app.com main nats-release upload-stemcell-1-0
+deploy-nats-standalone: concourse.check https://runtime.ci.cf-app.com main nats-release deploy-nats-standalone
+deploy-1-0-nats-standalone: concourse.check https://runtime.ci.cf-app.com main nats-release deploy-1-0-nats-standalone
+smoke-tests: concourse.check https://runtime.ci.cf-app.com main nats-release smoke-tests
+smoke-tests-1-0: concourse.check https://runtime.ci.cf-app.com main nats-release smoke-tests-1-0
+deploy-cf-with-updated-nats: concourse.check https://runtime.ci.cf-app.com main nats-release deploy-cf-with-updated-nats
+deploy-cf-with-updated-nats-1-0: concourse.check https://runtime.ci.cf-app.com main nats-release deploy-cf-with-updated-nats-1-0
+cats-tests: concourse.check https://runtime.ci.cf-app.com main nats-release cats-tests
+cats-tests-1-0: concourse.check https://runtime.ci.cf-app.com main nats-release cats-tests-1-0
+delete-deployment: concourse.check https://runtime.ci.cf-app.com main nats-release delete-deployment
+delete-deployment-1-0: concourse.check https://runtime.ci.cf-app.com main nats-release delete-deployment-1-0
+create-final-release: concourse.check https://runtime.ci.cf-app.com main nats-release create-final-release
+
+#- infrastructure
+verify-nameserver-has-record: concourse.check https://runtime.ci.cf-app.com main nats-release verify-nameserver-has-record
+setup-infrastructure: concourse.check https://runtime.ci.cf-app.com main nats-release setup-infrastructure
+setup-infrastructure-1-0: concourse.check https://runtime.ci.cf-app.com main nats-release setup-infrastructure-1-0
+destroy-infrastructure: concourse.check https://runtime.ci.cf-app.com main nats-release destroy-infrastructure
+destroy-infrastructure-1-0: concourse.check https://runtime.ci.cf-app.com main nats-release destroy-infrastructure-1-0
 
 #- buckets
-create-nats-release-bucket: concourse.check https://runtime.ci.cf-app.com nats-release create-nats-release-bucket
+create-nats-release-bucket: concourse.check https://runtime.ci.cf-app.com main nats-release create-nats-release-bucket
 

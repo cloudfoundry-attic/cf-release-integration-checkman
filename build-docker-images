@@ -1,68 +1,68 @@
 #- build-docker-images
-trigger-all-image-builds: concourse.check https://runtime.ci.cf-app.com build-docker-images trigger-all-image-builds
-build-announce-rc-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-announce-rc-docker-image
-build-can-bump-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-can-bump-docker-image
-build-cannot-bump-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-cannot-bump-docker-image
-build-generate-release-manifest-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-generate-release-manifest-docker-image
-build-create-final-release-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-create-final-release-docker-image
-build-create-minimal-cf-release-manifest-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-create-minimal-cf-release-manifest-docker-image
-build-create-release-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-create-release-docker-image
-build-create-release-notes-template-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-create-release-notes-template-docker-image
-build-delete-deployment-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-delete-deployment-docker-image
-build-deprovision-bosh-lite-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-deprovision-bosh-lite-docker-image
-build-enable-docker-diego-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-enable-docker-diego-docker-image
-build-merge-master-into-develop-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-merge-master-into-develop-docker-image
-build-provision-bosh-lite-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-provision-bosh-lite-docker-image
-build-record-compatible-versions-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-record-compatible-versions-docker-image
-build-request-pm-input-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-request-pm-input-docker-image
-build-run-bosh-cleanup-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-run-bosh-cleanup-docker-image
-build-run-cats-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-run-cats-docker-image
-build-run-cf-release-unit-tests-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-run-cf-release-unit-tests-docker-image
-build-run-errand-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-run-errand-docker-image
-build-run-smoketests-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-run-smoketests-docker-image
-build-validate-all-jobs-public-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-validate-all-jobs-public-docker-image
-build-validate-branch-freshness-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-validate-branch-freshness-docker-image
-build-generate-nats-deployment-manifest-from-bbl-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-generate-nats-deployment-manifest-from-bbl-docker-image
-build-generate-1-0-nats-deployment-manifest-from-bbl-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-generate-1-0-nats-deployment-manifest-from-bbl-docker-image
-build-setup-infrastructure-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-setup-infrastructure-docker-image
-build-extract-director-creds-from-bbl-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-extract-director-creds-from-bbl-docker-image
-build-destroy-infrastructure-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-destroy-infrastructure-docker-image
-build-check-deployment-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-check-deployment-docker-image
-build-create-bosh-lite-creds-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-create-bosh-lite-creds-docker-image
-build-create-bosh-lite-stub-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-create-bosh-lite-stub-docker-image
-build-create-diego-manifest-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-create-diego-manifest-docker-image
-build-create-bosh-lite-diego-cats-manifest-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-create-bosh-lite-diego-cats-manifest-docker-image
-build-run-errand-bbl-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-run-errand-bbl-docker-image
-build-run-errand-bbl-bosh-2-0-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-run-errand-bbl-bosh-2-0-docker-image
-build-write-target-file-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-write-target-file-docker-image
-build-write-creds-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-write-creds-docker-image
-build-bosh-deploy-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-bosh-deploy-docker-image
-build-bosh-upload-release-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-bosh-upload-release-docker-image
-build-bosh-upload-stemcell-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-bosh-upload-stemcell-docker-image
-build-verify-every-task-has-correct-docker-image-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-verify-every-task-has-correct-docker-image-docker-image
-build-verify-every-task-has-docker-build-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-verify-every-task-has-docker-build-docker-image
-build-verify-every-task-is-used-in-a-pipeline-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-verify-every-task-is-used-in-a-pipeline-docker-image
-build-create-diego-iaas-settings-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-create-diego-iaas-settings-docker-image
-build-bind-elb-to-r53-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-bind-elb-to-r53-docker-image
-build-unbind-elb-from-r53-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-unbind-elb-from-r53-docker-image
-build-cats-from-cf-release-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-cats-from-cf-release-docker-image
-build-run-ginkgo-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-run-ginkgo-docker-image
-build-recreate-datadog-dashboards-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-recreate-datadog-dashboards-docker-image
-build-extend-bosh-lite-diego-stub-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-extend-bosh-lite-diego-stub-docker-image
-build-extract-cloudformation-properties-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-extract-cloudformation-properties-docker-image
-build-create-binaries-manifest-section-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-create-binaries-manifest-section-docker-image
-build-extend-deployment-manifest-with-security-groups-and-elb-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-extend-deployment-manifest-with-security-groups-and-elb-docker-image
-build-commit-generated-manifest-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-commit-generated-manifest-docker-image
-build-fast-forward-master-to-develop-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-fast-forward-master-to-develop-docker-image
-build-create-final-release-bucket-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-create-final-release-bucket-docker-image
-build-verify-nameserver-has-record-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-verify-nameserver-has-record-docker-image
-build-write-build-url-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-write-build-url-docker-image
-build-write-director-version-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-write-director-version-docker-image
-build-untar-release-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-untar-release-docker-image
-build-build-metadata-resource-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-build-metadata-resource-docker-image
-build-inject-latest-release-into-deployment-manifest-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-inject-latest-release-into-deployment-manifest-docker-image
+trigger-all-image-builds: concourse.check https://runtime.ci.cf-app.com main build-docker-images trigger-all-image-builds
+build-announce-rc-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-announce-rc-docker-image
+build-can-bump-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-can-bump-docker-image
+build-cannot-bump-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-cannot-bump-docker-image
+build-generate-release-manifest-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-generate-release-manifest-docker-image
+build-create-final-release-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-create-final-release-docker-image
+build-create-minimal-cf-release-manifest-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-create-minimal-cf-release-manifest-docker-image
+build-create-release-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-create-release-docker-image
+build-create-release-notes-template-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-create-release-notes-template-docker-image
+build-delete-deployment-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-delete-deployment-docker-image
+build-deprovision-bosh-lite-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-deprovision-bosh-lite-docker-image
+build-enable-docker-diego-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-enable-docker-diego-docker-image
+build-merge-master-into-develop-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-merge-master-into-develop-docker-image
+build-provision-bosh-lite-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-provision-bosh-lite-docker-image
+build-record-compatible-versions-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-record-compatible-versions-docker-image
+build-request-pm-input-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-request-pm-input-docker-image
+build-run-bosh-cleanup-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-run-bosh-cleanup-docker-image
+build-run-cats-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-run-cats-docker-image
+build-run-cf-release-unit-tests-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-run-cf-release-unit-tests-docker-image
+build-run-errand-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-run-errand-docker-image
+build-run-smoketests-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-run-smoketests-docker-image
+build-validate-all-jobs-public-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-validate-all-jobs-public-docker-image
+build-validate-branch-freshness-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-validate-branch-freshness-docker-image
+build-generate-nats-deployment-manifest-from-bbl-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-generate-nats-deployment-manifest-from-bbl-docker-image
+build-generate-1-0-nats-deployment-manifest-from-bbl-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-generate-1-0-nats-deployment-manifest-from-bbl-docker-image
+build-setup-infrastructure-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-setup-infrastructure-docker-image
+build-extract-director-creds-from-bbl-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-extract-director-creds-from-bbl-docker-image
+build-destroy-infrastructure-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-destroy-infrastructure-docker-image
+build-check-deployment-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-check-deployment-docker-image
+build-create-bosh-lite-creds-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-create-bosh-lite-creds-docker-image
+build-create-bosh-lite-stub-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-create-bosh-lite-stub-docker-image
+build-create-diego-manifest-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-create-diego-manifest-docker-image
+build-create-bosh-lite-diego-cats-manifest-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-create-bosh-lite-diego-cats-manifest-docker-image
+build-run-errand-bbl-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-run-errand-bbl-docker-image
+build-run-errand-bbl-bosh-2-0-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-run-errand-bbl-bosh-2-0-docker-image
+build-write-target-file-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-write-target-file-docker-image
+build-write-creds-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-write-creds-docker-image
+build-bosh-deploy-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-bosh-deploy-docker-image
+build-bosh-upload-release-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-bosh-upload-release-docker-image
+build-bosh-upload-stemcell-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-bosh-upload-stemcell-docker-image
+build-verify-every-task-has-correct-docker-image-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-verify-every-task-has-correct-docker-image-docker-image
+build-verify-every-task-has-docker-build-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-verify-every-task-has-docker-build-docker-image
+build-verify-every-task-is-used-in-a-pipeline-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-verify-every-task-is-used-in-a-pipeline-docker-image
+build-create-diego-iaas-settings-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-create-diego-iaas-settings-docker-image
+build-bind-elb-to-r53-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-bind-elb-to-r53-docker-image
+build-unbind-elb-from-r53-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-unbind-elb-from-r53-docker-image
+build-cats-from-cf-release-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-cats-from-cf-release-docker-image
+build-run-ginkgo-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-run-ginkgo-docker-image
+build-recreate-datadog-dashboards-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-recreate-datadog-dashboards-docker-image
+build-extend-bosh-lite-diego-stub-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-extend-bosh-lite-diego-stub-docker-image
+build-extract-cloudformation-properties-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-extract-cloudformation-properties-docker-image
+build-create-binaries-manifest-section-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-create-binaries-manifest-section-docker-image
+build-extend-deployment-manifest-with-security-groups-and-elb-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-extend-deployment-manifest-with-security-groups-and-elb-docker-image
+build-commit-generated-manifest-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-commit-generated-manifest-docker-image
+build-fast-forward-master-to-develop-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-fast-forward-master-to-develop-docker-image
+build-create-final-release-bucket-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-create-final-release-bucket-docker-image
+build-verify-nameserver-has-record-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-verify-nameserver-has-record-docker-image
+build-write-build-url-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-write-build-url-docker-image
+build-write-director-version-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-write-director-version-docker-image
+build-untar-release-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-untar-release-docker-image
+build-build-metadata-resource-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-build-metadata-resource-docker-image
+build-inject-latest-release-into-deployment-manifest-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-inject-latest-release-into-deployment-manifest-docker-image
 
 #- run-cats-tests
-cats-task-unit-tests: concourse.check https://runtime.ci.cf-app.com build-docker-images cats-task-unit-tests
-build-run-cats-docker-image: concourse.check https://runtime.ci.cf-app.com build-docker-images build-run-cats-docker-image
+cats-task-unit-tests: concourse.check https://runtime.ci.cf-app.com main build-docker-images cats-task-unit-tests
+build-run-cats-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-run-cats-docker-image
 
