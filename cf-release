@@ -15,7 +15,6 @@ deploy-vsphere: concourse.check https://runtime.ci.cf-app.com main cf-release de
 vsphere-smoke-tests: concourse.check https://runtime.ci.cf-app.com main cf-release vsphere-smoke-tests
 vsphere-acceptance-tests: concourse.check https://runtime.ci.cf-app.com main cf-release vsphere-acceptance-tests
 rc: concourse.check https://runtime.ci.cf-app.com main cf-release rc
-aws-single-suite-acceptance-tests-experiment: concourse.check https://runtime.ci.cf-app.com main cf-release aws-single-suite-acceptance-tests-experiment
 
 #- bosh
 clean-all-the-boshes: concourse.check https://runtime.ci.cf-app.com main cf-release clean-all-the-boshes
