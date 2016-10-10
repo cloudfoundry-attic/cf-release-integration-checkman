@@ -1,5 +1,4 @@
 #- nats-release
-create-release: concourse.check https://runtime.ci.cf-app.com main nats-release create-release
 upload-stemcell: concourse.check https://runtime.ci.cf-app.com main nats-release upload-stemcell
 upload-stemcell-1-0: concourse.check https://runtime.ci.cf-app.com main nats-release upload-stemcell-1-0
 deploy-nats-standalone: concourse.check https://runtime.ci.cf-app.com main nats-release deploy-nats-standalone
@@ -20,6 +19,8 @@ setup-infrastructure: concourse.check https://runtime.ci.cf-app.com main nats-re
 setup-infrastructure-1-0: concourse.check https://runtime.ci.cf-app.com main nats-release setup-infrastructure-1-0
 destroy-infrastructure: concourse.check https://runtime.ci.cf-app.com main nats-release destroy-infrastructure
 destroy-infrastructure-1-0: concourse.check https://runtime.ci.cf-app.com main nats-release destroy-infrastructure-1-0
+run-bosh-cleanup: concourse.check https://runtime.ci.cf-app.com main nats-release run-bosh-cleanup
+run-bosh-cleanup-1-0: concourse.check https://runtime.ci.cf-app.com main nats-release run-bosh-cleanup-1-0
 
 #- buckets
 create-nats-release-bucket: concourse.check https://runtime.ci.cf-app.com main nats-release create-nats-release-bucket

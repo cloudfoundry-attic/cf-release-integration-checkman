@@ -37,6 +37,7 @@ build-run-errand-bbl-bosh-2-0-docker-image: concourse.check https://runtime.ci.c
 build-write-target-file-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-write-target-file-docker-image
 build-write-creds-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-write-creds-docker-image
 build-bosh-deploy-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-bosh-deploy-docker-image
+build-bosh-deploy-with-created-release-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-bosh-deploy-with-created-release-docker-image
 build-bosh-upload-release-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-bosh-upload-release-docker-image
 build-bosh-upload-stemcell-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-bosh-upload-stemcell-docker-image
 build-verify-every-task-has-correct-docker-image-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-verify-every-task-has-correct-docker-image-docker-image
@@ -60,7 +61,7 @@ build-write-build-url-docker-image: concourse.check https://runtime.ci.cf-app.co
 build-write-director-version-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-write-director-version-docker-image
 build-untar-release-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-untar-release-docker-image
 build-build-metadata-resource-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-build-metadata-resource-docker-image
-build-inject-latest-release-into-deployment-manifest-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-inject-latest-release-into-deployment-manifest-docker-image
+build-setup-infrastructure-terraform-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-setup-infrastructure-terraform-docker-image
 
 #- run-cats-tests
 cats-task-unit-tests: concourse.check https://runtime.ci.cf-app.com main build-docker-images cats-task-unit-tests
