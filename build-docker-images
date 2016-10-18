@@ -22,9 +22,10 @@ build-run-errand-docker-image: concourse.check https://runtime.ci.cf-app.com mai
 build-run-smoketests-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-run-smoketests-docker-image
 build-validate-all-jobs-public-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-validate-all-jobs-public-docker-image
 build-validate-branch-freshness-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-validate-branch-freshness-docker-image
-build-generate-nats-deployment-manifest-from-bbl-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-generate-nats-deployment-manifest-from-bbl-docker-image
+build-generate-nats-deployment-manifest-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-generate-nats-deployment-manifest-docker-image
 build-generate-1-0-nats-deployment-manifest-from-bbl-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-generate-1-0-nats-deployment-manifest-from-bbl-docker-image
 build-setup-infrastructure-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-setup-infrastructure-docker-image
+build-extract-director-creds-from-terraform-env-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-extract-director-creds-from-terraform-env-docker-image
 build-extract-director-creds-from-bbl-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-extract-director-creds-from-bbl-docker-image
 build-destroy-infrastructure-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-destroy-infrastructure-docker-image
 build-check-deployment-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-check-deployment-docker-image
@@ -38,6 +39,7 @@ build-write-target-file-docker-image: concourse.check https://runtime.ci.cf-app.
 build-write-creds-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-write-creds-docker-image
 build-bosh-deploy-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-bosh-deploy-docker-image
 build-bosh-deploy-with-created-release-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-bosh-deploy-with-created-release-docker-image
+build-bosh-create-env-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-bosh-create-env-docker-image
 build-bosh-upload-release-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-bosh-upload-release-docker-image
 build-bosh-upload-stemcell-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-bosh-upload-stemcell-docker-image
 build-verify-every-task-has-correct-docker-image-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-verify-every-task-has-correct-docker-image-docker-image
@@ -45,6 +47,7 @@ build-verify-every-task-has-docker-build-docker-image: concourse.check https://r
 build-verify-every-task-is-used-in-a-pipeline-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-verify-every-task-is-used-in-a-pipeline-docker-image
 build-create-diego-iaas-settings-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-create-diego-iaas-settings-docker-image
 build-bind-elb-to-r53-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-bind-elb-to-r53-docker-image
+build-bind-terraform-env-to-r53-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-bind-terraform-env-to-r53-docker-image
 build-unbind-elb-from-r53-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-unbind-elb-from-r53-docker-image
 build-cats-from-cf-release-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-cats-from-cf-release-docker-image
 build-run-ginkgo-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-run-ginkgo-docker-image
