@@ -66,7 +66,3 @@ build-untar-release-docker-image: concourse.check https://runtime.ci.cf-app.com 
 build-build-metadata-resource-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-build-metadata-resource-docker-image
 build-setup-infrastructure-terraform-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-setup-infrastructure-terraform-docker-image
 
-#- run-cats-tests
-cats-task-unit-tests: concourse.check https://runtime.ci.cf-app.com main build-docker-images cats-task-unit-tests
-build-run-cats-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-run-cats-docker-image
-
