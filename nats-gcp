@@ -1,0 +1,7 @@
+#- nats-gcp
+upload-stemcell: concourse.check https://runtime.ci.cf-app.com main nats-gcp upload-stemcell
+deploy-nats-standalone: concourse.check https://runtime.ci.cf-app.com main nats-gcp deploy-nats-standalone
+
+#- infrastructure
+setup-infrastructure: concourse.check https://runtime.ci.cf-app.com main nats-gcp setup-infrastructure
+
