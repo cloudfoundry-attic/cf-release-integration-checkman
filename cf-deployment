@@ -1,0 +1,12 @@
+#- cf-deployment
+update-releases: concourse.check https://runtime.ci.cf-app.com main cf-deployment update-releases
+deploy-releases: concourse.check https://runtime.ci.cf-app.com main cf-deployment deploy-releases
+acceptance-tests: concourse.check https://runtime.ci.cf-app.com main cf-deployment acceptance-tests
+bless-manifest: concourse.check https://runtime.ci.cf-app.com main cf-deployment bless-manifest
+
+#- infrastructure
+setup-infrastructure: concourse.check https://runtime.ci.cf-app.com main cf-deployment setup-infrastructure
+destroy-infrastructure: concourse.check https://runtime.ci.cf-app.com main cf-deployment destroy-infrastructure
+verify-nameserver-has-record: concourse.check https://runtime.ci.cf-app.com main cf-deployment verify-nameserver-has-record
+run-bosh-cleanup: concourse.check https://runtime.ci.cf-app.com main cf-deployment run-bosh-cleanup
+

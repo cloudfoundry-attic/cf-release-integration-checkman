@@ -42,6 +42,7 @@ build-bosh-deploy-with-created-release-docker-image: concourse.check https://run
 build-bosh-create-env-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-bosh-create-env-docker-image
 build-bosh-upload-release-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-bosh-upload-release-docker-image
 build-bosh-upload-stemcell-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-bosh-upload-stemcell-docker-image
+build-bosh-update-cloud-config-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-bosh-update-cloud-config-docker-image
 build-verify-every-task-has-correct-docker-image-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-verify-every-task-has-correct-docker-image-docker-image
 build-verify-every-task-has-docker-build-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-verify-every-task-has-docker-build-docker-image
 build-verify-every-task-is-used-in-a-pipeline-docker-image: concourse.check https://runtime.ci.cf-app.com main build-docker-images build-verify-every-task-is-used-in-a-pipeline-docker-image
